@@ -1,0 +1,224 @@
+This diagram has been generated with go-structurizr 
+[https://github.com/krzysztofreczek/go-structurizr]
+
+@startuml
+
+title SSL Game Controller
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+}
+hide stereotype
+top to bottom direction
+
+scale 4096 width
+
+skinparam rectangle<<_GROUP>> {
+  FontColor #ffffff
+  BorderColor #ffffff
+}
+
+skinparam rectangle<<STORE>> {
+  BackgroundColor #c7a767
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<ENGINE>> {
+  BackgroundColor #50c6c7
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<API>> {
+  BackgroundColor #75c735
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<RCON>> {
+  BackgroundColor #c73f9c
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<GC>> {
+  BackgroundColor #ffffff
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<SM>> {
+  BackgroundColor #ffff00
+  FontColor #000000
+  BorderColor #000000
+}
+
+skinparam rectangle<<STATE>> {
+  BackgroundColor #ff0000
+  FontColor #000000
+  BorderColor #000000
+}
+
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.GcStateTeam\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 2840398831
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.Client\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 3371177300
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.TeamInfo\n<size:10>[component]</size>\n\nstate" <<STATE>> as 2135704749
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.Config\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 1534459305
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.State\n<size:10>[component]</size>\n\nstate" <<STATE>> as 3756850289
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.RobotId\n<size:10>[component]</size>\n\nstate" <<STATE>> as 2463475353
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.YellowCard\n<size:10>[component]</size>\n\nstate" <<STATE>> as 2517659298
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.ControllerToRemoteControl\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 1866195973
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.TeamAdvantageChoice\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 4130026724
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.GcStateTracker\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 3347163334
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.RedCard\n<size:10>[component]</size>\n\nstate" <<STATE>> as 3008764541
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.BotNumberProcessor\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 1133527243
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.ControllerReply\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 137383049
+}
+rectangle 0SM <<_GROUP>> {
+	rectangle "==statemachine.Change\n<size:10>[component]</size>\n\nstate machine" <<SM>> as 238407187
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.TeamServer\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 966534301
+}
+rectangle 0SM <<_GROUP>> {
+	rectangle "==statemachine.StateMachine\n<size:10>[component]</size>\n\nstate machine" <<SM>> as 753556205
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.HookOut\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 4057990056
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.Command\n<size:10>[component]</size>\n\nstate" <<STATE>> as 1818697925
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.Server\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 3015020512
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.Engine\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 3756377797
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.Ball\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 1340683870
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.Referee\n<size:10>[component]</size>\n\nstate" <<STATE>> as 121837032
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.RemoteControlServer\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 641101205
+}
+rectangle 0API <<_GROUP>> {
+	rectangle "==api.Server\n<size:10>[component]</size>\n\napi" <<API>> as 1246642508
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.AutoRefServer\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 3892706290
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.AutoRefConfig\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 3491698063
+}
+rectangle 0SM <<_GROUP>> {
+	rectangle "==statemachine.StateChange\n<size:10>[component]</size>\n\nstate machine" <<SM>> as 2680231344
+}
+rectangle 0GC <<_GROUP>> {
+	rectangle "==gc.GameController\n<size:10>[component]</size>\n\ngc" <<GC>> as 3208162321
+}
+rectangle 0STORE <<_GROUP>> {
+	rectangle "==store.Store\n<size:10>[component]</size>\n\nstore" <<STORE>> as 3146515061
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.ControllerToTeam\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 1640843563
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.NoProgressDetector\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 36914089
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.BallPlacementCoordinator\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 1003587997
+}
+rectangle 0ENGINE <<_GROUP>> {
+	rectangle "==engine.GcState\n<size:10>[component]</size>\n\nengine" <<ENGINE>> as 2113132518
+}
+rectangle 0RCON <<_GROUP>> {
+	rectangle "==rcon.RemoteControlTeamState\n<size:10>[component]</size>\n\nrcon" <<RCON>> as 4191050692
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.GameEvent\n<size:10>[component]</size>\n\nstate" <<STATE>> as 61359122
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.Proposal\n<size:10>[component]</size>\n\nstate" <<STATE>> as 718456826
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.Foul\n<size:10>[component]</size>\n\nstate" <<STATE>> as 4181744842
+}
+rectangle 0STATE <<_GROUP>> {
+	rectangle "==state.GameState\n<size:10>[component]</size>\n\nstate" <<STATE>> as 4293436059
+}
+3146515061 .[#000000].> 2680231344 : ""
+36914089 .[#000000].> 3756377797 : ""
+753556205 .[#000000].> 238407187 : ""
+3371177300 .[#000000].> 137383049 : ""
+3892706290 .[#000000].> 3015020512 : ""
+3892706290 .[#000000].> 3371177300 : ""
+2840398831 .[#000000].> 4130026724 : ""
+1640843563 .[#000000].> 137383049 : ""
+966534301 .[#000000].> 3015020512 : ""
+966534301 .[#000000].> 3371177300 : ""
+966534301 .[#000000].> 1640843563 : ""
+641101205 .[#000000].> 1866195973 : ""
+641101205 .[#000000].> 3015020512 : ""
+641101205 .[#000000].> 3371177300 : ""
+3208162321 .[#000000].> 3756377797 : ""
+3208162321 .[#000000].> 121837032 : ""
+3208162321 .[#000000].> 4057990056 : ""
+3208162321 .[#000000].> 1246642508 : ""
+3208162321 .[#000000].> 3892706290 : ""
+3208162321 .[#000000].> 966534301 : ""
+3208162321 .[#000000].> 641101205 : ""
+3347163334 .[#000000].> 1340683870 : ""
+1534459305 .[#000000].> 3491698063 : ""
+3015020512 .[#000000].> 3371177300 : ""
+1866195973 .[#000000].> 4191050692 : ""
+1866195973 .[#000000].> 137383049 : ""
+2135704749 .[#000000].> 61359122 : ""
+3756377797 .[#000000].> 2463475353 : ""
+3756377797 .[#000000].> 1534459305 : ""
+3756377797 .[#000000].> 3146515061 : ""
+3756377797 .[#000000].> 753556205 : ""
+3756377797 .[#000000].> 2113132518 : ""
+3756377797 .[#000000].> 36914089 : ""
+3756377797 .[#000000].> 1003587997 : ""
+3756377797 .[#000000].> 1133527243 : ""
+2680231344 .[#000000].> 3756850289 : ""
+2680231344 .[#000000].> 238407187 : ""
+2113132518 .[#000000].> 2840398831 : ""
+2113132518 .[#000000].> 3347163334 : ""
+3756850289 .[#000000].> 1818697925 : ""
+3756850289 .[#000000].> 4293436059 : ""
+3756850289 .[#000000].> 3756850289 : ""
+3756850289 .[#000000].> 2135704749 : ""
+@enduml

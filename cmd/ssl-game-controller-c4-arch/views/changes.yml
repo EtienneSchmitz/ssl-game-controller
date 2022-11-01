@@ -1,0 +1,4 @@
+view:
+  title: "State Machine Changes"
+  component_tags:
+    - SM_CHANGES

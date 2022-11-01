@@ -1,0 +1,76 @@
+This diagram has been generated with go-structurizr 
+[https://github.com/krzysztofreczek/go-structurizr]
+
+@startuml
+
+title State Machine Changes
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+}
+hide stereotype
+top to bottom direction
+
+scale 4096 width
+
+skinparam rectangle<<_GROUP>> {
+  FontColor #ffffff
+  BorderColor #ffffff
+}
+
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AddGameEvent\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3749093071
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_NewCommand\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 2458194499
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_UpdateTeamState\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 2881185393
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_Revert\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 2873696482
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_StartBallPlacement\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3013761384
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_YellowCardOver\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3584298488
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_SwitchColors\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 1700125212
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AddRedCard\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 173917252
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_NewGameState\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3275845093
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AddProposal\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3839760081
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_ChangeStage\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3830949762
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_UpdateConfig\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 612989223
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AcceptProposalGroup\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3101222877
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AddYellowCard\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 3838131981
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_Continue\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 289439909
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_SetBallPlacementPos\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 2982122046
+}
+rectangle 0SM_CHANGES <<_GROUP>> {
+	rectangle "==statemachine.Change_AddPassiveGameEvent\n<size:10>[component]</size>\n\n" <<SM_CHANGES>> as 2259439070
+}
+@enduml

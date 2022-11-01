@@ -1,0 +1,139 @@
+This diagram has been generated with go-structurizr 
+[https://github.com/krzysztofreczek/go-structurizr]
+
+@startuml
+
+title Game Events
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+}
+hide stereotype
+top to bottom direction
+
+scale 4096 width
+
+skinparam rectangle<<_GROUP>> {
+  FontColor #ffffff
+  BorderColor #ffffff
+}
+
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotSubstitution\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 223368341
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_AimlessKick\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2601294391
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BallLeftField\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 818623785
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_ChallengeFlag\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3262325626
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_ChippedGoal\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1503686553
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_Goal\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2066583512
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_MultipleFouls\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 382864190
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BoundaryCrossing\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1472144105
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_DefenderInDefenseArea\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 88947900
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_IndirectGoal\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3163472246
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_PlacementFailed\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1570397575
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotDribbledBallTooFar\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 329985824
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotTooFastInStop\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1412309331
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotInterferedPlacement\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3213556689
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotCrashDrawn\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 104437489
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_PenaltyKickFailed\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2174922591
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_Prepared\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1156574034
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_MultiplePlacementFailures\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2610009505
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_TooManyRobots\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3106933313
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_UnsportingBehaviorMajor\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1290733853
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_AttackerTooCloseToDefenseArea\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 640096580
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_AttackerTouchedOpponentInDefenseArea\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2165278577
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotKickedBallTooFast\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 165977106
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotTippedOver\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 219394648
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_DefenderTooCloseToKickPoint\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1478799453
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_EmergencyStop\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1398375184
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_AttackerDoubleTouchedBall\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 925424428
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_DefenderInDefenseAreaPartially\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3722015182
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_KeeperHeldBall\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2317581731
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_KickTimeout\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 3867964424
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotPushedBot\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2238174602
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_MultipleCards\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 4088709538
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_NoProgressInGame\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1434112758
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotHeldBallDeliberately\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 1508073926
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_BotCrashUnique\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 276352292
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_UnsportingBehaviorMinor\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 533414729
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_AttackerTouchedBallInDefenseArea\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2483110373
+}
+rectangle 0GAME_EVENTS <<_GROUP>> {
+	rectangle "==state.GameEvent_PlacementSucceeded\n<size:10>[component]</size>\n\n" <<GAME_EVENTS>> as 2998783531
+}
+@enduml

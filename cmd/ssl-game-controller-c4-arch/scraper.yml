@@ -1,0 +1,66 @@
+configuration:
+  pkgs:
+    - "github.com/RoboCup-SSL/ssl-game-controller"
+
+rules:
+  - name_regexp: ".*"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/gc$"
+    component:
+      description: "gc"
+      tags:
+        - GC
+  - name_regexp: "statemachine\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/statemachine$"
+    component:
+      description: "state machine"
+      tags:
+        - SM
+  - name_regexp: "^state\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/state$"
+    component:
+      description: "state"
+      tags:
+        - STATE
+  - name_regexp: "^store\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/store"
+    component:
+      description: "store"
+      tags:
+        - STORE
+  - name_regexp: "^engine\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/engine"
+    component:
+      description: "engine"
+      tags:
+        - ENGINE
+  - name_regexp: "^api\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/api"
+    component:
+      description: "api"
+      tags:
+        - API
+  - name_regexp: "^rcon\\.[a-zA-Z0-9]*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/rcon"
+    component:
+      description: "rcon"
+      tags:
+        - RCON
+  - name_regexp: "^state\\.GameEvent_.*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/state$"
+    component:
+      tags:
+        - GAME_EVENTS
+  - name_regexp: "^statemachine\\.Change_.*$"
+    pkg_regexps:
+      - "^.*/ssl-game-controller/internal/app/statemachine$"
+    component:
+      tags:
+        - SM_CHANGES

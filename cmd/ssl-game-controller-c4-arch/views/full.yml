@@ -1,0 +1,40 @@
+view:
+  title: "SSL Game Controller"
+  line_color: 000000ff
+  styles:
+    - id: GC
+      background_color: ffffffff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: SM
+      background_color: ffff00ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: STATE
+      background_color: ff0000ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: STORE
+      background_color: C7A767ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: ENGINE
+      background_color: 50C6C7ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: API
+      background_color: 75C735ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: RCON
+      background_color: C73F9Cff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: SM_CHANGES
+      background_color: FEFF63ff
+      font_color: 000000ff
+      border_color: 000000ff
+    - id: GAME_EVENTS
+      background_color: 6F93FFff
+      font_color: 000000ff
+      border_color: 000000ff
